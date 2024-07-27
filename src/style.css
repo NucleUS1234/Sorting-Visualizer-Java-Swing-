@@ -1,0 +1,115 @@
+/* Existing CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.controls button, .controls select {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.controls button {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.controls button:hover {
+    background-color: #45a049;
+}
+
+.controls select {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.complexity {
+    margin-bottom: 20px;
+}
+
+.array-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.array-bar {
+    margin: 0 2px;
+    background-color: #4CAF50;
+    width: 100%;
+    transition: height 0.2s, background-color 0.2s;
+    border-radius: 3px;
+}
+
+.array-bar.compared {
+    background-color: #FF5733;
+}
+
+.array-bar.swapped {
+    background-color: #FFC300;
+}
+
+.array-bar.sorted {
+    background-color: #3498db;
+}
+
+/* New swap colors for better effect */
+.array-bar.swap-phase1 {
+    background-color: #FF5733; /* Red */
+}
+
+.array-bar.swap-phase2 {
+    background-color: #FFC300; /* Yellow */
+}
+
+.array-bar.swap-phase3 {
+    background-color: #DAF7A6; /* Light Green */
+}
+
+.array-bar.swap-phase4 {
+    background-color: #33FFBD; /* Teal */
+}
+
+/* Speed control slider */
+.speed-control {
+    margin-bottom: 20px;
+}
